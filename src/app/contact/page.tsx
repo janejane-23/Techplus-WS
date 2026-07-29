@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Card } from "@/components/ui/Card";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
+import { ContactForm } from "@/components/sections/ContactForm";
 import { homepageContent } from "@/content/homepage";
 
 export const metadata: Metadata = {
@@ -23,6 +24,8 @@ export default function ContactPage() {
         description="Tell us about the business challenge you're trying to solve. A senior advisor, not a call center, will follow up to schedule time."
         cta={{ label: "Email Our Team", href: `mailto:${footer.email}` }}
       />
+
+      <ContactForm />
 
       <SectionWrapper variant="flat">
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
