@@ -55,8 +55,8 @@ export function ContactForm() {
       Array.from(formData.entries()).filter(([key]) => key !== "painPoints" && key !== "servicesInterested")
     );
     payload.marketingConsent = formData.get("marketingConsent") === "on";
-    payload.painPoints = formData.getAll("painPoints") as string[];
-    payload.servicesInterested = formData.getAll("servicesInterested") as string[];
+    payload.painPoints = (formData.getAll("painPoints") as string[]).join(", ");
+    payload.servicesInterested = (formData.getAll("servicesInterested") as string[]).join(", ");
 
     try {
       const res = await fetch(WEBHOOK_URL, {
