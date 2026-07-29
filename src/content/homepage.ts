@@ -1,6 +1,7 @@
 import type { HomepageContent } from "./types";
 import { services } from "./services";
 import { industries } from "./industries";
+import generatedBlogPosts from "./blog-posts.generated.json";
 
 export const homepageContent: HomepageContent = {
   meta: {
@@ -207,6 +208,15 @@ export const homepageContent: HomepageContent = {
       "Scalable omnichannel growth",
     ],
     cta: { label: "Discuss Order Orchestration", href: "/contact" },
+  },
+
+  blogPreview: {
+    eyebrow: "From Our Partner",
+    heading: "Latest from the DataXstream Blog",
+    intro:
+      "TechPlus is a regional reseller of DataXstream OMS+. Follow the team defining the platform's roadmap directly.",
+    posts: generatedBlogPosts,
+    cta: { label: "Visit the DataXstream Blog", href: "https://www.dataxstream.com/blog/" },
   },
 
   industryFocus: {

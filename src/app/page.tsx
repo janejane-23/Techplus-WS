@@ -4,6 +4,7 @@ import { CoreNarrative } from "@/components/sections/CoreNarrative";
 import { BusinessOutcomes } from "@/components/sections/BusinessOutcomes";
 import { ConsultingServices } from "@/components/sections/ConsultingServices";
 import { OmsPlusPositioning } from "@/components/sections/OmsPlusPositioning";
+import { BlogPreview } from "@/components/sections/BlogPreview";
 import { IndustryFocus } from "@/components/sections/IndustryFocus";
 import { Differentiators } from "@/components/sections/Differentiators";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
@@ -19,6 +20,7 @@ export default function Home() {
       <BusinessOutcomes content={homepageContent.businessOutcomes} />
       <ConsultingServices content={homepageContent.consultingServices} />
       <OmsPlusPositioning content={homepageContent.omsPlus} />
+      <BlogPreview content={homepageContent.blogPreview} />
       <IndustryFocus content={homepageContent.industryFocus} />
       <Differentiators content={homepageContent.differentiators} />
       <GlobalPresence content={homepageContent.globalPresence} />

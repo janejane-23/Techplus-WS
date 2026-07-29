@@ -15,9 +15,14 @@ export function Button({ href, children, variant = "filled", className = "" }: B
     variant === "filled"
       ? "bg-sky-500 text-white hover:bg-sky-400"
       : "border border-white/20 text-white hover:border-white/40 hover:bg-white/5";
+  const isExternal = href.startsWith("http");
 
   return (
-    <Link href={href} className={`${base} ${styles} ${className}`}>
+    <Link
+      href={href}
+      className={`${base} ${styles} ${className}`}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
       {children}
     </Link>
   );

@@ -161,6 +161,23 @@ export interface GlobalPresenceContent {
   offices: Office[];
 }
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  href: string;
+  image: string;
+}
+
+export interface BlogPreviewContent {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  posts: BlogPost[];
+  cta: LinkItem;
+}
+
 export interface FinalCtaContent {
   eyebrow: string;
   heading: string;
@@ -195,6 +212,7 @@ export interface HomepageContent {
   businessOutcomes: BusinessOutcomesContent;
   consultingServices: ConsultingServicesContent;
   omsPlus: OmsPlusContent;
+  blogPreview: BlogPreviewContent;
   industryFocus: IndustryFocusContent;
   differentiators: DifferentiatorsContent;
   globalPresence: GlobalPresenceContent;
