@@ -3,8 +3,13 @@
 import { useState, type FormEvent } from "react";
 import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
+import { homepageContent } from "@/content/homepage";
+import { services } from "@/content/services";
 
 const WEBHOOK_URL = "https://sapcxapac.app.n8n.cloud/webhook/893de0d2-3e79-4832-8abe-300e7273c382";
+
+const PAIN_POINTS = homepageContent.executiveChallenges.items.map((item) => item.painPoint);
+const SERVICE_OPTIONS = services.map((service) => service.name);
 
 const COUNTRIES = [
   "Singapore",
@@ -46,8 +51,12 @@ export function ContactForm() {
     setStatus("submitting");
 
     const formData = new FormData(e.currentTarget);
-    const payload: Record<string, FormDataEntryValue | boolean> = Object.fromEntries(formData.entries());
+    const payload: Record<string, FormDataEntryValue | boolean | string[]> = Object.fromEntries(
+      Array.from(formData.entries()).filter(([key]) => key !== "painPoints" && key !== "servicesInterested")
+    );
     payload.marketingConsent = formData.get("marketingConsent") === "on";
+    payload.painPoints = formData.getAll("painPoints") as string[];
+    payload.servicesInterested = formData.getAll("servicesInterested") as string[];
 
     try {
       const res = await fetch(WEBHOOK_URL, {
@@ -157,7 +166,43 @@ export function ContactForm() {
           </div>
         </div>
 
-        <label className="mt-6 flex items-start gap-3 text-sm text-white/60">
+        <div className="mt-8 space-y-2">
+          <span className={labelClass}>Pain Points (optional)</span>
+          <p className="text-xs text-white/40">Select any that apply to your business.</p>
+          <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+            {PAIN_POINTS.map((point) => (
+              <label key={point} className="flex items-start gap-3 text-sm text-white/70">
+                <input
+                  type="checkbox"
+                  name="painPoints"
+                  value={point}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-white/[0.03] accent-sky-500"
+                />
+                {point}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 space-y-2">
+          <span className={labelClass}>Services You&apos;re Interested In (optional)</span>
+          <p className="text-xs text-white/40">Select any that apply.</p>
+          <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+            {SERVICE_OPTIONS.map((service) => (
+              <label key={service} className="flex items-start gap-3 text-sm text-white/70">
+                <input
+                  type="checkbox"
+                  name="servicesInterested"
+                  value={service}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-white/[0.03] accent-sky-500"
+                />
+                {service}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <label className="mt-8 flex items-start gap-3 text-sm text-white/60">
           <input
             type="checkbox"
             name="marketingConsent"
