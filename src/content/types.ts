@@ -105,6 +105,21 @@ export interface SapPlatformContent {
   stages: SapProductStage[];
 }
 
+export interface LeadToCashLoop {
+  id: string;
+  label: string;
+  productLabel: string;
+  capabilities: string[];
+  accent: "sky" | "amber";
+}
+
+export interface LeadToCashFlowContent {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  loops: LeadToCashLoop[];
+}
+
 export interface OmsPlusContent {
   eyebrow: string;
   heading: string;
@@ -228,6 +243,7 @@ export interface HomepageContent {
   businessOutcomes: BusinessOutcomesContent;
   consultingServices: ConsultingServicesContent;
   sapPlatform: SapPlatformContent;
+  leadToCashFlow: LeadToCashFlowContent;
   omsPlus: OmsPlusContent;
   blogPreview: BlogPreviewContent;
   industryFocus: IndustryFocusContent;

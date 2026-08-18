@@ -245,6 +245,28 @@ export const homepageContent: HomepageContent = {
     ],
   },
 
+  leadToCashFlow: {
+    eyebrow: "One Connected Flow",
+    heading: "Lead-to-Cash, Without the Handoff Gaps",
+    intro: "Two halves of one continuous journey—orchestrated as a single flow, not two disconnected systems.",
+    loops: [
+      {
+        id: "lead",
+        label: "Lead",
+        productLabel: "SAP Sales Cloud + CPQ",
+        capabilities: ["Generate & qualify leads", "Manage opportunities", "Configure & quote", "Convert to sales order"],
+        accent: "sky",
+      },
+      {
+        id: "cash",
+        label: "Cash",
+        productLabel: "OMS+ · Service Cloud · S/4HANA",
+        capabilities: ["Receive & fulfill orders", "Resolve service requests", "Bill accurately", "Close the books"],
+        accent: "amber",
+      },
+    ],
+  },
+
   omsPlus: {
     eyebrow: "Featured Capability",
     heading: "Intelligent Order Management",
