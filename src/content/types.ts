@@ -89,6 +89,22 @@ export interface ConsultingServicesContent {
   services: (ServicePageContent & { href: string })[];
 }
 
+export interface SapProductStage {
+  id: string;
+  stageLabel: string;
+  name: string;
+  description: string;
+  capabilities: string[];
+  icon: string;
+}
+
+export interface SapPlatformContent {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  stages: SapProductStage[];
+}
+
 export interface OmsPlusContent {
   eyebrow: string;
   heading: string;
@@ -211,6 +227,7 @@ export interface HomepageContent {
   coreNarrative: CoreNarrativeContent;
   businessOutcomes: BusinessOutcomesContent;
   consultingServices: ConsultingServicesContent;
+  sapPlatform: SapPlatformContent;
   omsPlus: OmsPlusContent;
   blogPreview: BlogPreviewContent;
   industryFocus: IndustryFocusContent;

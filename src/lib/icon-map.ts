@@ -26,6 +26,11 @@ import {
   Infinity,
   Handshake,
   Globe2,
+  Users,
+  FileText,
+  Package,
+  Headphones,
+  Landmark,
   type LucideIcon,
 } from "lucide-react";
 
@@ -57,6 +62,11 @@ export const iconMap: Record<string, LucideIcon> = {
   Infinity,
   Handshake,
   Globe2,
+  Users,
+  FileText,
+  Package,
+  Headphones,
+  Landmark,
 };
 
 export function getIcon(name: string): LucideIcon {

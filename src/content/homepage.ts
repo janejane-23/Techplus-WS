@@ -190,6 +190,61 @@ export const homepageContent: HomepageContent = {
     services: services.map((service) => ({ ...service, href: `/services/${service.slug}` })),
   },
 
+  sapPlatform: {
+    eyebrow: "Our SAP Platform",
+    heading: "The SAP Products Behind Every Stage of Your Journey",
+    intro:
+      "We don't believe in point solutions bolted together. Every stage of your Lead-to-Cash journey runs on a purpose-built SAP product, orchestrated as one connected platform.",
+    stages: [
+      {
+        id: "sales-cloud",
+        stageLabel: "Lead & Opportunity",
+        name: "SAP Sales Cloud",
+        description: "Capture leads, manage relationships, and build a pipeline your sales team can trust.",
+        capabilities: ["Lead & opportunity management", "Customer 360", "Sales forecasting", "Mobile-first selling"],
+        icon: "Users",
+      },
+      {
+        id: "cpq",
+        stageLabel: "Configure & Quote",
+        name: "SAP CPQ",
+        description: "Configure complex offers and generate accurate quotes without manual back-and-forth.",
+        capabilities: [
+          "Guided product configuration",
+          "Dynamic pricing rules",
+          "Quote approval workflows",
+          "Instant quote-to-order conversion",
+        ],
+        icon: "FileText",
+      },
+      {
+        id: "oms-plus",
+        stageLabel: "Order & Fulfillment",
+        name: "DataXstream OMS+",
+        description: "Orchestrate every order across every channel, including point-of-sale, on real-time SAP data.",
+        capabilities: ["Omnichannel order orchestration", "Point-of-sale (POS)", "Inventory visibility", "Returns & fulfillment"],
+        icon: "Package",
+      },
+      {
+        id: "service-cloud",
+        stageLabel: "Service & Support",
+        name: "SAP Service Cloud",
+        description:
+          "Resolve service requests quickly with full visibility into every customer's order and account history.",
+        capabilities: ["Case & service request management", "Knowledge base", "Omnichannel support", "SLA management"],
+        icon: "Headphones",
+      },
+      {
+        id: "s4hana",
+        stageLabel: "Billing & Finance",
+        name: "SAP S/4HANA Cloud",
+        description: "Bill accurately and close the books faster on a modern financial core, public or private cloud.",
+        capabilities: ["Billing & invoicing", "Financial management", "Real-time reporting", "Public or private cloud deployment"],
+        icon: "Landmark",
+      },
+    ],
+  },
+
   omsPlus: {
     eyebrow: "Featured Capability",
     heading: "Intelligent Order Management",
