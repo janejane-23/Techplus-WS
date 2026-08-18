@@ -105,11 +105,10 @@ export interface SapPlatformContent {
   stages: SapProductStage[];
 }
 
-export interface LeadToCashLoop {
+export interface LeadToCashStage {
   id: string;
   label: string;
-  productLabel: string;
-  capabilities: string[];
+  product: string;
   accent: "sky" | "amber";
 }
 
@@ -117,7 +116,8 @@ export interface LeadToCashFlowContent {
   eyebrow: string;
   heading: string;
   intro: string;
-  loops: LeadToCashLoop[];
+  backgroundImage: string;
+  stages: LeadToCashStage[];
 }
 
 export interface OmsPlusContent {

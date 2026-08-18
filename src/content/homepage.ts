@@ -248,22 +248,20 @@ export const homepageContent: HomepageContent = {
   leadToCashFlow: {
     eyebrow: "One Connected Flow",
     heading: "Lead-to-Cash, Without the Handoff Gaps",
-    intro: "Two halves of one continuous journey—orchestrated as a single flow, not two disconnected systems.",
-    loops: [
-      {
-        id: "lead",
-        label: "Lead",
-        productLabel: "SAP Sales Cloud + CPQ",
-        capabilities: ["Generate & qualify leads", "Manage opportunities", "Configure & quote", "Convert to sales order"],
-        accent: "sky",
-      },
-      {
-        id: "cash",
-        label: "Cash",
-        productLabel: "OMS+ · Service Cloud · S/4HANA",
-        capabilities: ["Receive & fulfill orders", "Resolve service requests", "Bill accurately", "Close the books"],
-        accent: "amber",
-      },
+    intro:
+      "Every stage of the journey, mapped to the SAP product that powers it—orchestrated as one continuous flow, not ten disconnected handoffs.",
+    backgroundImage: "/images/lead-to-cash-flow.jpg",
+    stages: [
+      { id: "lead-generation", label: "Lead Generation", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "customer-engagement", label: "Customer Engagement", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "sales-management", label: "Sales Management", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "quotation", label: "Quotation", product: "SAP CPQ", accent: "sky" },
+      { id: "order-capture", label: "Order Capture", product: "DataXstream OMS+", accent: "amber" },
+      { id: "order-orchestration", label: "Order Orchestration", product: "DataXstream OMS+", accent: "amber" },
+      { id: "fulfillment", label: "Fulfillment", product: "DataXstream OMS+", accent: "amber" },
+      { id: "billing", label: "Billing", product: "SAP S/4HANA Cloud", accent: "amber" },
+      { id: "customer-service", label: "Customer Service", product: "SAP Service Cloud", accent: "amber" },
+      { id: "analytics", label: "Analytics", product: "SAP S/4HANA Cloud", accent: "amber" },
     ],
   },
 
