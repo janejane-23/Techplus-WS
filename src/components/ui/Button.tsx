@@ -13,8 +13,8 @@ export function Button({ href, children, variant = "filled", className = "" }: B
     "inline-flex items-center justify-center rounded-[10px] px-6 py-3 text-sm font-semibold transition-colors";
   const styles =
     variant === "filled"
-      ? "bg-sky-500 text-white hover:bg-sky-400"
-      : "border border-white/20 text-white hover:border-white/40 hover:bg-white/5";
+      ? "bg-sky-500 text-white hover:bg-sky-600"
+      : "border border-sky-300 text-slate-900 hover:border-sky-400 hover:bg-sky-100/60";
   const isExternal = href.startsWith("http");
 
   return (

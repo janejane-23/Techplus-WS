@@ -11,15 +11,15 @@ export function Hero({ content }: { content: HeroContent }) {
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <Badge>{content.badge}</Badge>
 
-        <h1 className="mt-8 text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="mt-8 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
           {content.headline}
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">{content.subheadline}</p>
+        <p className="mt-6 max-w-2xl text-lg text-slate-700 sm:text-xl">{content.subheadline}</p>
 
-        <p className="mt-4 max-w-2xl text-base text-white/60">{content.paragraph}</p>
+        <p className="mt-4 max-w-2xl text-base text-slate-600">{content.paragraph}</p>
 
-        <p className="mt-4 text-sm font-semibold tracking-wide text-sky-400 uppercase">
+        <p className="mt-4 text-sm font-semibold tracking-wide text-sky-600 uppercase">
           {content.poweredByLine}
         </p>
 

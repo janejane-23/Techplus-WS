@@ -38,8 +38,8 @@ const HEARD_ABOUT_OPTIONS = [
 const BUSINESS_TYPES = ["Retail", "Consumer Products", "Wholesale Distribution", "Other"];
 
 const inputClass =
-  "w-full rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-white/30 outline-none transition-colors focus:border-sky-500";
-const labelClass = "text-sm font-medium text-white/70";
+  "w-full rounded-lg border border-sky-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition-colors focus:border-sky-500";
+const labelClass = "text-sm font-medium text-slate-700";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -74,10 +74,10 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <SectionWrapper variant="flat">
-        <div className="mx-auto flex max-w-xl flex-col items-center rounded-2xl border border-white/10 bg-white/[0.03] p-10 text-center">
-          <CheckCircle2 className="h-10 w-10 text-sky-400" />
-          <h3 className="mt-4 text-xl font-bold text-white">Request received</h3>
-          <p className="mt-2 text-sm text-white/60">
+        <div className="mx-auto flex max-w-xl flex-col items-center rounded-2xl border border-sky-200 bg-white p-10 text-center shadow-sm">
+          <CheckCircle2 className="h-10 w-10 text-sky-600" />
+          <h3 className="mt-4 text-xl font-bold text-slate-900">Request received</h3>
+          <p className="mt-2 text-sm text-slate-600">
             A senior advisor will follow up shortly to schedule your strategy consultation.
           </p>
         </div>
@@ -128,7 +128,7 @@ export function ContactForm() {
                 Select a country
               </option>
               {COUNTRIES.map((c) => (
-                <option key={c} value={c} className="bg-black">
+                <option key={c} value={c} className="bg-white">
                   {c}
                 </option>
               ))}
@@ -143,7 +143,7 @@ export function ContactForm() {
                 Select an option
               </option>
               {HEARD_ABOUT_OPTIONS.map((o) => (
-                <option key={o} value={o} className="bg-black">
+                <option key={o} value={o} className="bg-white">
                   {o}
                 </option>
               ))}
@@ -158,7 +158,7 @@ export function ContactForm() {
                 Select an option
               </option>
               {BUSINESS_TYPES.map((b) => (
-                <option key={b} value={b} className="bg-black">
+                <option key={b} value={b} className="bg-white">
                   {b}
                 </option>
               ))}
@@ -168,15 +168,15 @@ export function ContactForm() {
 
         <div className="mt-8 space-y-2">
           <span className={labelClass}>Pain Points (optional)</span>
-          <p className="text-xs text-white/40">Select any that apply to your business.</p>
+          <p className="text-xs text-slate-500">Select any that apply to your business.</p>
           <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2">
             {PAIN_POINTS.map((point) => (
-              <label key={point} className="flex items-start gap-3 text-sm text-white/70">
+              <label key={point} className="flex items-start gap-3 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   name="painPoints"
                   value={point}
-                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-white/[0.03] accent-sky-500"
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-sky-300 bg-white accent-sky-500"
                 />
                 {point}
               </label>
@@ -186,15 +186,15 @@ export function ContactForm() {
 
         <div className="mt-8 space-y-2">
           <span className={labelClass}>Services You&apos;re Interested In (optional)</span>
-          <p className="text-xs text-white/40">Select any that apply.</p>
+          <p className="text-xs text-slate-500">Select any that apply.</p>
           <div className="mt-3 grid gap-x-6 gap-y-3 sm:grid-cols-2">
             {SERVICE_OPTIONS.map((service) => (
-              <label key={service} className="flex items-start gap-3 text-sm text-white/70">
+              <label key={service} className="flex items-start gap-3 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   name="servicesInterested"
                   value={service}
-                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-white/[0.03] accent-sky-500"
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-sky-300 bg-white accent-sky-500"
                 />
                 {service}
               </label>
@@ -202,17 +202,17 @@ export function ContactForm() {
           </div>
         </div>
 
-        <label className="mt-8 flex items-start gap-3 text-sm text-white/60">
+        <label className="mt-8 flex items-start gap-3 text-sm text-slate-600">
           <input
             type="checkbox"
             name="marketingConsent"
-            className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-white/[0.03] accent-sky-500"
+            className="mt-0.5 h-4 w-4 shrink-0 rounded border-sky-300 bg-white accent-sky-500"
           />
           Yes, send me updates on TechPlus services, insights, and events.
         </label>
 
         {status === "error" && (
-          <div className="mt-6 flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+          <div className="mt-6 flex items-center gap-2 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
             <AlertCircle className="h-4 w-4 shrink-0" />
             Something went wrong sending your request. Please try again or email us directly.
           </div>
@@ -221,7 +221,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="mt-8 inline-flex items-center justify-center gap-2 rounded-[10px] bg-sky-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60"
+          className="mt-8 inline-flex items-center justify-center gap-2 rounded-[10px] bg-sky-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-sky-600 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "submitting" && <Loader2 className="h-4 w-4 animate-spin" />}
           {status === "submitting" ? "Sending..." : "Send"}

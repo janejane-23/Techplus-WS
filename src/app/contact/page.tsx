@@ -30,28 +30,28 @@ export default function ContactPage() {
       <SectionWrapper variant="flat">
         <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
           <Card className="flex flex-col items-start">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/10">
-              <Mail className="h-5 w-5 text-sky-400" />
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100">
+              <Mail className="h-5 w-5 text-sky-600" />
             </span>
-            <h3 className="mt-4 text-sm font-semibold text-white">Email</h3>
-            <a href={`mailto:${footer.email}`} className="mt-1 text-sm text-sky-400 hover:text-sky-300">
+            <h3 className="mt-4 text-sm font-semibold text-slate-900">Email</h3>
+            <a href={`mailto:${footer.email}`} className="mt-1 text-sm text-sky-600 hover:text-sky-700">
               {footer.email}
             </a>
           </Card>
           <Card className="flex flex-col items-start">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/10">
-              <Phone className="h-5 w-5 text-sky-400" />
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100">
+              <Phone className="h-5 w-5 text-sky-600" />
             </span>
-            <h3 className="mt-4 text-sm font-semibold text-white">Phone</h3>
-            <a href={`tel:${footer.phone}`} className="mt-1 text-sm text-sky-400 hover:text-sky-300">
+            <h3 className="mt-4 text-sm font-semibold text-slate-900">Phone</h3>
+            <a href={`tel:${footer.phone}`} className="mt-1 text-sm text-sky-600 hover:text-sky-700">
               {footer.phone}
             </a>
           </Card>
         </div>
 
         <div className="mx-auto mt-10 max-w-2xl text-center">
-          <h3 className="text-xs font-semibold tracking-wide text-white/50 uppercase">Business Hours</h3>
-          <div className="mt-4 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-white/60">
+          <h3 className="text-xs font-semibold tracking-wide text-slate-500 uppercase">Business Hours</h3>
+          <div className="mt-4 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-slate-600">
             {footer.businessHours.map((h) => (
               <span key={h.label}>
                 {h.label}: {h.value}

@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${jakarta.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-black font-sans">
+      <body className="flex min-h-full flex-col bg-sky-50 font-sans">
         <Header content={homepageContent.nav} />
         <main className="flex-1">{children}</main>
         <Footer content={homepageContent.footer} presence={homepageContent.globalPresence} />

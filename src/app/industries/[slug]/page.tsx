@@ -62,16 +62,16 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
 
       <SectionWrapper variant="flat">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold tracking-wide text-sky-400 uppercase">Recommended SAP Architecture</p>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">Recommended SAP Architecture</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             The Foundation We Recommend
           </h2>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {industry.recommendedSapArchitecture.map((item) => (
             <Card key={item.title}>
-              <h3 className="text-base font-semibold text-white">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/60">{item.description}</p>
+              <h3 className="text-base font-semibold text-slate-900">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.description}</p>
             </Card>
           ))}
         </div>

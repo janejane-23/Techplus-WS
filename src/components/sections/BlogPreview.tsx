@@ -7,9 +7,9 @@ export function BlogPreview({ content }: { content: BlogPreviewContent }) {
   return (
     <SectionWrapper variant="flat">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="text-sm font-semibold tracking-wide text-sky-400 uppercase">{content.eyebrow}</p>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{content.heading}</h2>
-        <p className="mt-4 text-white/60">{content.intro}</p>
+        <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">{content.eyebrow}</p>
+        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{content.heading}</h2>
+        <p className="mt-4 text-slate-600">{content.intro}</p>
       </div>
 
       <div className="mt-14 grid gap-6 sm:grid-cols-3">
@@ -19,9 +19,9 @@ export function BlogPreview({ content }: { content: BlogPreviewContent }) {
             href={post.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-colors hover:border-white/20"
+            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-sky-200 bg-white shadow-sm transition-colors hover:border-sky-300"
           >
-            <div className="aspect-[4/3] w-full overflow-hidden bg-white/5">
+            <div className="aspect-[4/3] w-full overflow-hidden bg-sky-50">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.image}
@@ -32,11 +32,11 @@ export function BlogPreview({ content }: { content: BlogPreviewContent }) {
             </div>
             <div className="flex flex-1 flex-col p-6">
               <div className="flex items-start justify-between gap-3">
-                <span className="text-xs text-white/50">{post.date}</span>
-                <ExternalLink className="h-4 w-4 shrink-0 text-white/40" />
+                <span className="text-xs text-slate-500">{post.date}</span>
+                <ExternalLink className="h-4 w-4 shrink-0 text-slate-400" />
               </div>
-              <h3 className="mt-3 text-base font-semibold text-white">{post.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-white/60">{post.excerpt}</p>
+              <h3 className="mt-3 text-base font-semibold text-slate-900">{post.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{post.excerpt}</p>
             </div>
           </a>
         ))}
