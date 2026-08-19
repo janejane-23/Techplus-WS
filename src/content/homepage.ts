@@ -221,8 +221,15 @@ export const homepageContent: HomepageContent = {
         id: "oms-plus",
         stageLabel: "Order & Fulfillment",
         name: "DataXstream OMS+",
-        description: "Orchestrate every order across every channel, including point-of-sale, on real-time SAP data.",
-        capabilities: ["Omnichannel order orchestration", "Point-of-sale (POS)", "Inventory visibility", "Returns & fulfillment"],
+        description:
+          "Orchestrate every order across every channel, including point-of-sale, on real-time SAP data—feeding recurring orders straight into SAP Subscription Billing.",
+        capabilities: [
+          "Omnichannel order orchestration",
+          "Point-of-sale (POS)",
+          "Inventory visibility",
+          "Returns & fulfillment",
+          "Recurring charge triggers",
+        ],
         icon: "Package",
       },
       {
@@ -230,7 +237,7 @@ export const homepageContent: HomepageContent = {
         stageLabel: "Subscription & Recurring Revenue",
         name: "SAP Subscription Billing",
         description:
-          "Flexible, automated billing for recurring revenue and subscription-based business models.",
+          "Flexible, automated billing for recurring revenue and subscription-based business models, integrated directly with OMS+ so every recurring order becomes a recurring charge automatically.",
         capabilities: ["Usage-based billing", "Subscription lifecycle", "Revenue recognition", "Contract management"],
         icon: "Repeat",
       },
@@ -260,7 +267,7 @@ export const homepageContent: HomepageContent = {
       { id: "order-orchestration", label: "Order Orchestration", product: "DataXstream OMS+", accent: "amber" },
       { id: "fulfillment", label: "Fulfillment", product: "DataXstream OMS+", accent: "amber" },
       { id: "billing", label: "Billing", product: "SAP S/4HANA Cloud", accent: "amber" },
-      { id: "customer-service", label: "Customer Service", product: "SAP Subscription Billing", accent: "amber" },
+      { id: "subscription-billing", label: "Subscription Billing", product: "SAP Subscription Billing", accent: "amber" },
       { id: "analytics", label: "Analytics", product: "SAP S/4HANA Cloud", accent: "amber" },
     ],
   },
