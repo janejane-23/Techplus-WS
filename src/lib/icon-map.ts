@@ -31,6 +31,7 @@ import {
   Package,
   Headphones,
   Landmark,
+  Repeat,
   type LucideIcon,
 } from "lucide-react";
 
@@ -67,6 +68,7 @@ export const iconMap: Record<string, LucideIcon> = {
   Package,
   Headphones,
   Landmark,
+  Repeat,
 };
 
 export function getIcon(name: string): LucideIcon {

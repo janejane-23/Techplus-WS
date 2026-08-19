@@ -226,13 +226,13 @@ export const homepageContent: HomepageContent = {
         icon: "Package",
       },
       {
-        id: "service-cloud",
-        stageLabel: "Service & Support",
-        name: "SAP Service Cloud",
+        id: "subscription-billing",
+        stageLabel: "Subscription & Recurring Revenue",
+        name: "SAP Subscription Billing",
         description:
-          "Resolve service requests quickly with full visibility into every customer's order and account history.",
-        capabilities: ["Case & service request management", "Knowledge base", "Omnichannel support", "SLA management"],
-        icon: "Headphones",
+          "Flexible, automated billing for recurring revenue and subscription-based business models.",
+        capabilities: ["Usage-based billing", "Subscription lifecycle", "Revenue recognition", "Contract management"],
+        icon: "Repeat",
       },
       {
         id: "s4hana",
@@ -260,7 +260,7 @@ export const homepageContent: HomepageContent = {
       { id: "order-orchestration", label: "Order Orchestration", product: "DataXstream OMS+", accent: "amber" },
       { id: "fulfillment", label: "Fulfillment", product: "DataXstream OMS+", accent: "amber" },
       { id: "billing", label: "Billing", product: "SAP S/4HANA Cloud", accent: "amber" },
-      { id: "customer-service", label: "Customer Service", product: "SAP Service Cloud", accent: "amber" },
+      { id: "customer-service", label: "Customer Service", product: "SAP Subscription Billing", accent: "amber" },
       { id: "analytics", label: "Analytics", product: "SAP S/4HANA Cloud", accent: "amber" },
     ],
   },
