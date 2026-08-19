@@ -218,6 +218,15 @@ export const homepageContent: HomepageContent = {
         icon: "FileText",
       },
       {
+        id: "commerce-cloud",
+        stageLabel: "Self-Service Ordering",
+        name: "SAP Commerce Cloud",
+        description:
+          "Give B2B customers a self-service storefront—account-based pricing, contract catalogs, and reordering—connected directly to your SAP core.",
+        capabilities: ["B2B storefronts", "Self-service ordering", "Contract & catalog pricing", "Omnichannel commerce"],
+        icon: "Store",
+      },
+      {
         id: "oms-plus",
         stageLabel: "Order & Fulfillment",
         name: "DataXstream OMS+",
@@ -248,6 +257,15 @@ export const homepageContent: HomepageContent = {
         description: "Bill accurately and close the books faster on a modern financial core, public or private cloud.",
         capabilities: ["Billing & invoicing", "Financial management", "Real-time reporting", "Public or private cloud deployment"],
         icon: "Landmark",
+      },
+      {
+        id: "integration-suite",
+        stageLabel: "Integration & Connectivity",
+        name: "SAP Integration Suite",
+        description:
+          "The connective layer tying every product above together—APIs, events, and pre-built connectors keeping SAP and non-SAP systems in sync in real time.",
+        capabilities: ["API management", "Event-driven architecture", "Pre-built connectors", "B2B & EDI integration"],
+        icon: "Network",
       },
     ],
   },
