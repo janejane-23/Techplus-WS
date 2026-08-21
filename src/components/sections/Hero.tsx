@@ -17,8 +17,6 @@ export function Hero({ content }: { content: HeroContent }) {
 
         <p className="mt-6 max-w-2xl text-lg text-slate-700 sm:text-xl">{content.subheadline}</p>
 
-        <p className="mt-4 max-w-2xl text-base text-slate-600">{content.paragraph}</p>
-
         <p className="mt-4 text-sm font-semibold tracking-wide text-sky-600 uppercase">
           {content.poweredByLine}
         </p>

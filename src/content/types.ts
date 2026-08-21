@@ -18,7 +18,6 @@ export interface HeroContent {
   badge: string;
   headline: string;
   subheadline: string;
-  paragraph: string;
   poweredByLine: string;
   ctaPrimary: LinkItem;
   ctaSecondary: LinkItem;
