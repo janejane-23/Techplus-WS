@@ -8,7 +8,7 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { homepageContent } from "@/content/homepage";
 
 export const metadata: Metadata = {
-  title: "Contact TechPlus APAC | Schedule a Strategy Consultation",
+  title: "Contact TechPlus APAC | Book a Lead-to-Cash Assessment",
   description:
     "Talk to the TechPlus APAC team about your Lead-to-Cash transformation. Reach us by phone or email, or find the office closest to you.",
 };
@@ -20,8 +20,9 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Let's Talk"
-        headline="Schedule a Strategy Consultation"
-        description="Tell us about the business challenge you're trying to solve. A senior advisor, not a call center, will follow up to schedule time."
+        headline="Book Your 60-Minute Lead-to-Cash Assessment"
+        description="Get an executive view of where your Lead-to-Cash journey is creating friction, cost and revenue leakage."
+        tagline="Identify. Prioritize. Transform."
         cta={{ label: "Email Our Team", href: `mailto:${footer.email}` }}
       />
 
