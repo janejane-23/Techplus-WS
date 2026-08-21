@@ -43,7 +43,7 @@ export const homepageContent: HomepageContent = {
       { label: "Industries", href: "#industries" },
       { label: "Global Presence", href: "#presence" },
     ],
-    cta: { label: "Schedule a Strategy Consultation", href: "/contact" },
+    cta: { label: "Book a Lead-to-Cash Assessment", href: "/contact" },
   },
 
   hero: {
