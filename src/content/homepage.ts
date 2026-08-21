@@ -56,7 +56,7 @@ export const homepageContent: HomepageContent = {
     ctaSecondary: { label: "Explore Our Solutions", href: "#services" },
     stats: [
       { value: "3", label: "Industries of Deep Specialization" },
-      { value: "Three Engines", label: "One Connected Platform" },
+      { value: "One Connected Platform", label: "Three Engines" },
       { value: "4", label: "APAC & Global Offices" },
       { value: "Boutique", label: "Executive-Led Advisory" },
     ],
