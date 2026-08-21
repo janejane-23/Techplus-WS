@@ -158,7 +158,7 @@ export const homepageContent: HomepageContent = {
       { id: "fulfillment", label: "Fulfillment", description: "Deliver with speed and accuracy." },
       { id: "billing", label: "Billing", description: "Invoice and realize revenue reliably." },
       { id: "subscription-billing", label: "Subscription Billing", description: "Automate recurring billing and renewals." },
-      { id: "finance-and-revenue", label: "Finance and Revenue", description: "Close the books and surface executive insight." },
+      { id: "finance-and-revenue", label: "Finance and Revenue Integration", description: "Integrate order and revenue data into your finance systems for real-time executive insight." },
     ],
     closingLine: "TechPlus supports the entire lifecycle—not isolated software implementations.",
   },
@@ -191,80 +191,121 @@ export const homepageContent: HomepageContent = {
   },
 
   sapPlatform: {
-    eyebrow: "Our SAP Platform",
-    heading: "The SAP Products Behind Every Stage of Your Journey",
+    eyebrow: "Our Platform",
+    heading: "Three Engines. One Connected Lead-to-Cash Platform.",
     intro:
-      "We don't believe in point solutions bolted together. Every stage of your Lead-to-Cash journey runs on a purpose-built SAP product, orchestrated as one connected platform.",
-    stages: [
+      "We don't believe in point solutions bolted together. Three purpose-built engines power your entire Lead-to-Cash journey, connected in real time by SAP S/4HANA and SAP Integration Suite.",
+    pillars: [
       {
-        id: "sales-cloud",
-        stageLabel: "Lead & Opportunity",
-        name: "SAP Sales Cloud",
-        description: "Capture leads, manage relationships, and build a pipeline your sales team can trust.",
-        capabilities: ["Lead & opportunity management", "Customer 360", "Sales forecasting", "Mobile-first selling"],
-        icon: "Users",
-      },
-      {
-        id: "cpq",
-        stageLabel: "Configure & Quote",
-        name: "SAP CPQ",
-        description: "Configure complex offers and generate accurate quotes without manual back-and-forth.",
-        capabilities: [
-          "Guided product configuration",
-          "Dynamic pricing rules",
-          "Quote approval workflows",
-          "Instant quote-to-order conversion",
+        id: "quote-to-revenue",
+        eyebrow: "Quote to Revenue",
+        headline: "Sales Cloud with CPQ and Subscription Billing: The Complete Quote-to-Revenue Engine",
+        intro: "From first opportunity to recurring revenue, one connected engine takes every deal from quote to cash.",
+        products: [
+          {
+            id: "sales-cloud",
+            stageLabel: "Lead & Opportunity",
+            name: "SAP Sales Cloud",
+            description: "Capture leads, manage relationships, and build a pipeline your sales team can trust.",
+            capabilities: ["Lead & opportunity management", "Customer 360", "Sales forecasting", "Mobile-first selling"],
+            icon: "Users",
+          },
+          {
+            id: "cpq",
+            stageLabel: "Configure & Quote",
+            name: "SAP CPQ",
+            description: "Configure complex offers and generate accurate quotes without manual back-and-forth.",
+            capabilities: [
+              "Guided product configuration",
+              "Dynamic pricing rules",
+              "Quote approval workflows",
+              "Instant quote-to-order conversion",
+            ],
+            icon: "FileText",
+          },
+          {
+            id: "subscription-billing",
+            stageLabel: "Subscription & Recurring Revenue",
+            name: "SAP Subscription Billing",
+            description:
+              "Flexible, automated billing for recurring revenue and subscription-based business models, integrated directly with OMS+ so every recurring order becomes a recurring charge automatically.",
+            capabilities: ["Usage-based billing", "Subscription lifecycle", "Revenue recognition", "Contract management"],
+            icon: "Repeat",
+          },
         ],
-        icon: "FileText",
       },
       {
-        id: "commerce-cloud",
-        stageLabel: "Self-Service Ordering",
-        name: "SAP Commerce Cloud",
-        description:
-          "Give B2B customers a self-service storefront—account-based pricing, contract catalogs, and reordering—connected directly to your SAP core.",
-        capabilities: ["B2B storefronts", "Self-service ordering", "Contract & catalog pricing", "Omnichannel commerce"],
-        icon: "Store",
-      },
-      {
-        id: "oms-plus",
-        stageLabel: "Order & Fulfillment",
-        name: "DataXstream OMS+",
-        description:
-          "Orchestrate every order across every channel, including point-of-sale, on real-time SAP data—feeding recurring orders straight into SAP Subscription Billing.",
-        capabilities: [
-          "Omnichannel order orchestration",
-          "Point-of-sale (POS)",
-          "Inventory visibility",
-          "Returns & fulfillment",
-          "Recurring charge triggers",
+        id: "order-orchestration",
+        eyebrow: "Order Orchestration",
+        headline: "DataXstream OMS+: Orchestrate Every Order. Elevate Every Experience",
+        intro: "Every channel, every order, one orchestration layer on top of your existing SAP investment.",
+        products: [
+          {
+            id: "oms-plus",
+            stageLabel: "Order & Fulfillment",
+            name: "DataXstream OMS+",
+            description:
+              "Orchestrate every order across every channel, including point-of-sale, on real-time SAP data—feeding recurring orders straight into SAP Subscription Billing.",
+            capabilities: [
+              "Omnichannel order orchestration",
+              "Point-of-sale (POS)",
+              "Inventory visibility",
+              "Returns & fulfillment",
+              "Recurring charge triggers",
+            ],
+            icon: "Package",
+          },
         ],
-        icon: "Package",
       },
       {
-        id: "subscription-billing",
-        stageLabel: "Subscription & Recurring Revenue",
-        name: "SAP Subscription Billing",
-        description:
-          "Flexible, automated billing for recurring revenue and subscription-based business models, integrated directly with OMS+ so every recurring order becomes a recurring charge automatically.",
-        capabilities: ["Usage-based billing", "Subscription lifecycle", "Revenue recognition", "Contract management"],
-        icon: "Repeat",
+        id: "ai-retail-growth",
+        eyebrow: "AI & Retail Growth",
+        headline: "Retail Smarter. Grow Faster. Powered by Joule AI Studio & n8n.",
+        intro: "Embed generative and agentic AI directly into your SAP-powered Lead-to-Cash process, so routine decisions execute themselves.",
+        products: [
+          {
+            id: "joule-ai-studio",
+            stageLabel: "Generative & Agentic AI",
+            name: "SAP Joule AI Studio",
+            description:
+              "Build and deploy generative and agentic AI directly on SAP—from customer-facing assistants to autonomous back-office agents.",
+            capabilities: [
+              "Generative AI assistants",
+              "Agentic workflow automation",
+              "Natural-language SAP interactions",
+              "Built on SAP BTP",
+            ],
+            icon: "Bot",
+          },
+          {
+            id: "n8n",
+            stageLabel: "Workflow Automation",
+            name: "n8n Workflow Automation",
+            description:
+              "Connect SAP and non-SAP systems with flexible automation that keeps routine Lead-to-Cash decisions moving without manual intervention.",
+            capabilities: [
+              "Cross-system workflow automation",
+              "Low-code integration",
+              "Event-driven triggers",
+              "Rapid deployment",
+            ],
+            icon: "Workflow",
+          },
+        ],
       },
+    ],
+    foundation: [
       {
         id: "s4hana",
-        stageLabel: "Billing & Finance",
         name: "SAP S/4HANA Cloud",
-        description: "Bill accurately and close the books faster on a modern financial core, public or private cloud.",
-        capabilities: ["Billing & invoicing", "Financial management", "Real-time reporting", "Public or private cloud deployment"],
+        description: "Bill accurately and integrate revenue data into a modern financial core, public or private cloud.",
         icon: "Landmark",
       },
       {
         id: "integration-suite",
-        stageLabel: "Integration & Connectivity",
         name: "SAP Integration Suite",
         description:
-          "The connective layer tying every product above together—APIs, events, and pre-built connectors keeping SAP and non-SAP systems in sync in real time.",
-        capabilities: ["API management", "Event-driven architecture", "Pre-built connectors", "B2B & EDI integration"],
+          "The connective layer tying every engine above together—APIs, events, and pre-built connectors keeping SAP and non-SAP systems in sync in real time.",
         icon: "Network",
       },
     ],
@@ -280,13 +321,13 @@ export const homepageContent: HomepageContent = {
       { id: "lead-generation", label: "Lead Generation", product: "SAP Sales Cloud", accent: "sky" },
       { id: "customer-engagement", label: "Customer Engagement", product: "SAP Sales Cloud", accent: "sky" },
       { id: "sales-management", label: "Sales Management", product: "SAP Sales Cloud", accent: "sky" },
-      { id: "quotation", label: "Quotation", product: "SAP CPQ + SAP Commerce Cloud", accent: "sky" },
-      { id: "order-capture", label: "Order Capture", product: "DataXstream OMS+ + SAP Commerce Cloud", accent: "amber" },
+      { id: "quotation", label: "Quotation", product: "SAP CPQ", accent: "sky" },
+      { id: "order-capture", label: "Order Capture", product: "DataXstream OMS+", accent: "amber" },
       { id: "order-orchestration", label: "Order Orchestration", product: "DataXstream OMS+", accent: "amber" },
       { id: "fulfillment", label: "Fulfillment", product: "DataXstream OMS+", accent: "amber" },
       { id: "billing", label: "Billing", product: "SAP S/4HANA Cloud", accent: "amber" },
       { id: "subscription-billing", label: "Subscription Billing", product: "SAP Subscription Billing", accent: "amber" },
-      { id: "finance-and-revenue", label: "Finance and Revenue", product: "SAP S/4HANA Cloud", accent: "amber" },
+      { id: "finance-and-revenue", label: "Finance and Revenue Integration", product: "SAP S/4HANA Cloud + SAP Integration Suite", accent: "amber" },
     ],
   },
 

@@ -12,38 +12,56 @@ export function SapPlatform({ content }: { content: SapPlatformContent }) {
         <p className="mt-4 text-slate-600">{content.intro}</p>
       </div>
 
-      <div className="mx-auto mt-14 max-w-3xl">
-        {content.stages.map((stage, i) => {
-          const Icon = getIcon(stage.icon);
-          const isLast = i === content.stages.length - 1;
-          return (
-            <div key={stage.id} className="relative flex gap-6 pb-10 last:pb-0">
-              {!isLast && (
-                <span
-                  aria-hidden
-                  className="absolute left-6 top-14 -bottom-2 w-px bg-sky-200"
-                />
-              )}
-              <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-sky-300 bg-white shadow-sm">
-                <Icon className="h-5 w-5 text-sky-600" />
-              </div>
-              <Card className="flex-1">
-                <span className="text-xs font-semibold tracking-wide text-sky-600 uppercase">
-                  {String(i + 1).padStart(2, "0")} · {stage.stageLabel}
-                </span>
-                <h3 className="mt-2 text-lg font-bold text-slate-900">{stage.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">{stage.description}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {stage.capabilities.map((cap) => (
-                    <span
-                      key={cap}
-                      className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs text-slate-600"
-                    >
-                      {cap}
+      <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        {content.pillars.map((pillar) => (
+          <Card key={pillar.id} className="flex flex-col">
+            <span className="text-xs font-semibold tracking-wide text-sky-600 uppercase">{pillar.eyebrow}</span>
+            <h3 className="mt-2 text-lg font-bold text-slate-900">{pillar.headline}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">{pillar.intro}</p>
+
+            <div className="mt-6 flex flex-1 flex-col gap-5">
+              {pillar.products.map((product) => {
+                const Icon = getIcon(product.icon);
+                return (
+                  <div key={product.id} className="flex gap-3 border-t border-sky-100 pt-5 first:border-t-0 first:pt-0">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sky-100">
+                      <Icon className="h-4 w-4 text-sky-600" />
                     </span>
-                  ))}
-                </div>
-              </Card>
+                    <div>
+                      <span className="text-[11px] font-semibold tracking-wide text-slate-500 uppercase">
+                        {product.stageLabel}
+                      </span>
+                      <h4 className="text-sm font-semibold text-slate-900">{product.name}</h4>
+                      <p className="mt-1 text-xs leading-relaxed text-slate-600">{product.description}</p>
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {product.capabilities.map((cap) => (
+                          <span
+                            key={cap}
+                            className="rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 text-[11px] text-slate-600"
+                          >
+                            {cap}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <div className="mx-auto mt-8 flex max-w-3xl flex-col gap-4 rounded-2xl border border-sky-200 bg-sky-50 p-6 sm:flex-row sm:items-center sm:justify-center sm:gap-10">
+        {content.foundation.map((item) => {
+          const Icon = getIcon(item.icon);
+          return (
+            <div key={item.id} className="flex items-start gap-3 sm:max-w-xs">
+              <Icon className="mt-0.5 h-4 w-4 shrink-0 text-sky-600" />
+              <div>
+                <span className="text-xs font-semibold text-slate-900">{item.name}</span>
+                <p className="mt-0.5 text-xs leading-relaxed text-slate-600">{item.description}</p>
+              </div>
             </div>
           );
         })}

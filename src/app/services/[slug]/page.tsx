@@ -46,7 +46,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <ExecutiveInsight insight={service.executiveInsight} variant="gradient" />
 
       <ProseSection variant="flat" eyebrow="Our Approach" heading="How TechPlus Helps" paragraphs={[service.approach]}>
-        <Checklist heading="SAP Capabilities That Enable This" items={service.capabilities} />
+        <Checklist heading="Capabilities That Enable This" items={service.capabilities} />
       </ProseSection>
 
       <InfoList

@@ -37,6 +37,10 @@ export const industries: IndustryPageContent[] = [
       { title: "OMS+ Order Orchestration", description: "Unify store, digital, and marketplace orders into one fulfillment engine." },
       { title: "SAP BTP & Integration Suite", description: "Connect POS, e-commerce, and marketplace platforms to SAP in real time." },
       { title: "SAP Sales Cloud / CPQ", description: "Equip associates and B2B sales teams with a single customer view." },
+      {
+        title: "SAP Joule AI Studio & n8n",
+        description: "Automate retail-specific decisions—dynamic pricing, personalization, exception handling—with agentic AI and cross-system orchestration.",
+      },
     ],
     expectedOutcomes: [
       "Faster, more accurate omnichannel order fulfillment",

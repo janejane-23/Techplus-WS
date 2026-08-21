@@ -120,12 +120,12 @@ export const services: ServicePageContent[] = [
     summary:
       "Embed AI-driven automation and autonomous agents into your Lead-to-Cash process, so routine decisions execute themselves.",
     capabilities: [
+      "SAP Joule AI Studio",
+      "n8n workflow automation",
       "Autonomous order exception handling",
       "AI-powered demand & inventory forecasting",
       "Intelligent sales & service agents",
-      "SAP BTP AI & Joule integration",
       "Predictive customer insights",
-      "Automated approvals & workflow orchestration",
     ],
     businessChallenge:
       "Most Lead-to-Cash processes still depend on people to notice exceptions, chase approvals, and manually keep operations moving—which limits how fast and how far the business can scale.",
@@ -134,7 +134,7 @@ export const services: ServicePageContent[] = [
     executiveInsight:
       "The next competitive advantage in Lead-to-Cash isn't a faster manual process—it's a process that runs itself, with people managing by exception instead of managing every transaction.",
     approach:
-      "We embed AI-driven automation and autonomous agents directly into your SAP-powered Lead-to-Cash processes—from lead qualification to order exceptions to customer service—so routine decisions execute automatically and your teams focus only on what genuinely needs judgment.",
+      "We embed generative and agentic AI—built with SAP Joule AI Studio and orchestrated across systems with n8n—directly into your SAP-powered Lead-to-Cash processes—from lead qualification to order exceptions to customer service—so routine decisions execute automatically and your teams focus only on what genuinely needs judgment.",
     expectedOutcomes: [
       "Fewer manual touchpoints across the Lead-to-Cash journey",
       "Faster exception resolution and order turnaround",

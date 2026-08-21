@@ -62,7 +62,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
 
       <SectionWrapper variant="flat">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">Recommended SAP Architecture</p>
+          <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">Recommended Architecture</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
             The Foundation We Recommend
           </h2>

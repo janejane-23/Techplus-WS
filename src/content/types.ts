@@ -89,12 +89,27 @@ export interface ConsultingServicesContent {
   services: (ServicePageContent & { href: string })[];
 }
 
-export interface SapProductStage {
+export interface SapPlatformProduct {
   id: string;
-  stageLabel: string;
   name: string;
+  stageLabel: string;
   description: string;
   capabilities: string[];
+  icon: string;
+}
+
+export interface SapPlatformPillar {
+  id: string;
+  eyebrow: string;
+  headline: string;
+  intro: string;
+  products: SapPlatformProduct[];
+}
+
+export interface SapPlatformFoundationItem {
+  id: string;
+  name: string;
+  description: string;
   icon: string;
 }
 
@@ -102,7 +117,8 @@ export interface SapPlatformContent {
   eyebrow: string;
   heading: string;
   intro: string;
-  stages: SapProductStage[];
+  pillars: SapPlatformPillar[];
+  foundation: SapPlatformFoundationItem[];
 }
 
 export interface LeadToCashStage {
