@@ -48,9 +48,9 @@ export const homepageContent: HomepageContent = {
 
   hero: {
     badge: "The APAC Lead-to-Cash Transformation Specialist",
-    headline: "Connect Sales to Revenue. Transform Lead-to-Cash. TechPlus Eliminates the Handoffs Between Sales, Orders and Finance.",
+    headline: "Connect Sales to Revenue. Transform Lead-to-Cash.",
     subheadline:
-      "TechPlus helps Retail, Consumer Products and Wholesale companies connect Sales, CPQ, Order Management, Billing and Finance into one intelligent Lead-to-Cash platform powered by SAP.",
+      "TechPlus eliminates the handoffs between sales, orders and finance—helping Retail, Consumer Products and Wholesale companies connect Sales, CPQ, Order Management, Billing and Finance into one intelligent Lead-to-Cash platform powered by SAP.",
     poweredByLine: "Powered by SAP. Driven by autonomous outcomes.",
     ctaPrimary: { label: "Schedule a Strategy Consultation", href: "/contact" },
     ctaSecondary: { label: "Explore Our Solutions", href: "#services" },
