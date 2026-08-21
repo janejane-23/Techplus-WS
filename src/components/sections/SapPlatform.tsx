@@ -5,7 +5,7 @@ import type { SapPlatformContent } from "@/content/types";
 
 export function SapPlatform({ content }: { content: SapPlatformContent }) {
   return (
-    <SectionWrapper variant="flat">
+    <SectionWrapper id="services" variant="flat">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold tracking-wide text-sky-600 uppercase">{content.eyebrow}</p>
         <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{content.heading}</h2>

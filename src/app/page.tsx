@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { ExecutiveChallenges } from "@/components/sections/ExecutiveChallenges";
 import { LeadToCashFlow } from "@/components/sections/LeadToCashFlow";
 import { BusinessOutcomes } from "@/components/sections/BusinessOutcomes";
-import { ConsultingServices } from "@/components/sections/ConsultingServices";
 import { SapPlatform } from "@/components/sections/SapPlatform";
 import { OmsPlusPositioning } from "@/components/sections/OmsPlusPositioning";
 import { BlogPreview } from "@/components/sections/BlogPreview";
@@ -19,7 +18,6 @@ export default function Home() {
       <ExecutiveChallenges content={homepageContent.executiveChallenges} />
       <LeadToCashFlow content={homepageContent.leadToCashFlow} />
       <BusinessOutcomes content={homepageContent.businessOutcomes} />
-      <ConsultingServices content={homepageContent.consultingServices} />
       <SapPlatform content={homepageContent.sapPlatform} />
       <OmsPlusPositioning content={homepageContent.omsPlus} />
       <BlogPreview content={homepageContent.blogPreview} />

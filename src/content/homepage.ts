@@ -160,14 +160,6 @@ export const homepageContent: HomepageContent = {
     ],
   },
 
-  consultingServices: {
-    eyebrow: "Consulting Services",
-    heading: "How We Deliver Transformation",
-    intro:
-      "A full-lifecycle capability set, organized around the way executives actually think about the Lead-to-Cash journey—not around software modules.",
-    services: services.map((service) => ({ ...service, href: `/services/${service.slug}` })),
-  },
-
   sapPlatform: {
     eyebrow: "Our Platform",
     heading: "Three Engines. One Connected Lead-to-Cash Platform.",

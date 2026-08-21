@@ -67,13 +67,6 @@ export interface ServicePageContent {
   cta: LinkItem;
 }
 
-export interface ConsultingServicesContent {
-  eyebrow: string;
-  heading: string;
-  intro: string;
-  services: (ServicePageContent & { href: string })[];
-}
-
 export interface SapPlatformProduct {
   id: string;
   name: string;
@@ -243,7 +236,6 @@ export interface HomepageContent {
   hero: HeroContent;
   executiveChallenges: ExecutiveChallengesContent;
   businessOutcomes: BusinessOutcomesContent;
-  consultingServices: ConsultingServicesContent;
   sapPlatform: SapPlatformContent;
   leadToCashFlow: LeadToCashFlowContent;
   omsPlus: OmsPlusContent;
