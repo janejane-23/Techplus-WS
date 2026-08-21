@@ -39,20 +39,6 @@ export interface ExecutiveChallengesContent {
   items: ChallengeItem[];
 }
 
-export interface FlowStage {
-  id: string;
-  label: string;
-  description: string;
-}
-
-export interface CoreNarrativeContent {
-  eyebrow: string;
-  heading: string;
-  intro: string;
-  stages: FlowStage[];
-  closingLine: string;
-}
-
 export interface OutcomeItem {
   id: string;
   title: string;
@@ -124,6 +110,7 @@ export interface SapPlatformContent {
 export interface LeadToCashStage {
   id: string;
   label: string;
+  description: string;
   product: string;
   accent: "sky" | "amber";
 }
@@ -134,6 +121,7 @@ export interface LeadToCashFlowContent {
   intro: string;
   backgroundImage: string;
   stages: LeadToCashStage[];
+  closingLine: string;
 }
 
 export interface OmsPlusContent {
@@ -255,7 +243,6 @@ export interface HomepageContent {
   nav: NavContent;
   hero: HeroContent;
   executiveChallenges: ExecutiveChallengesContent;
-  coreNarrative: CoreNarrativeContent;
   businessOutcomes: BusinessOutcomesContent;
   consultingServices: ConsultingServicesContent;
   sapPlatform: SapPlatformContent;

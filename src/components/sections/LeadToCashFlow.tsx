@@ -30,10 +30,11 @@ export function LeadToCashFlow({ content }: { content: LeadToCashFlowContent }) 
             return (
               <div key={stage.id} className="flex items-stretch gap-3">
                 <div
-                  className={`flex w-40 flex-col items-center rounded-xl border ${accent.border} bg-white/80 px-4 py-5 text-center shadow-sm backdrop-blur-sm`}
+                  className={`flex w-48 flex-col items-center rounded-xl border ${accent.border} bg-white/80 px-4 py-5 text-center shadow-sm backdrop-blur-sm`}
                 >
                   <span className={`text-xs font-semibold ${accent.text}`}>{String(i + 1).padStart(2, "0")}</span>
                   <span className="mt-2 text-sm font-semibold text-slate-900">{stage.label}</span>
+                  <span className="mt-1 text-xs text-slate-500">{stage.description}</span>
                   <span className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-sky-200 bg-sky-100/60 px-2.5 py-1 text-[11px] text-slate-600">
                     <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} />
                     {stage.product}
@@ -46,6 +47,8 @@ export function LeadToCashFlow({ content }: { content: LeadToCashFlowContent }) 
             );
           })}
         </div>
+
+        <p className="mx-auto mt-12 max-w-2xl text-center text-sm font-medium text-slate-700">{content.closingLine}</p>
       </div>
     </section>
   );

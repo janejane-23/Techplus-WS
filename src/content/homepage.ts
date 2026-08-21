@@ -48,9 +48,9 @@ export const homepageContent: HomepageContent = {
 
   hero: {
     badge: "The APAC Lead-to-Cash Transformation Specialist",
-    headline: "Transform Your Lead-to-Cash Journey",
+    headline: "Connect Sales to Revenue. Transform Lead-to-Cash. TechPlus eliminates the handoffs between sales, orders and finance",
     subheadline:
-      "Modernize sales, orchestrate every order, and deliver exceptional customer experiences with SAP-powered business transformation.",
+      "TechPlus helps Retail, Consumer Products and Wholesale companies connect Sales, CPQ, Order Management, Billing and Finance into one intelligent Lead-to-Cash platform powered by SAP.",
     paragraph:
       "We help Retail, Consumer Products, and Wholesale Distribution companies transform the entire Lead-to-Cash process—from customer engagement and sales automation to omnichannel order management and revenue realization.",
     poweredByLine: "Powered by SAP. Driven by autonomous outcomes.",
@@ -141,26 +141,6 @@ export const homepageContent: HomepageContent = {
         icon: "TrendingDown",
       },
     ],
-  },
-
-  coreNarrative: {
-    eyebrow: "Our Core Narrative",
-    heading: "We Support the Entire Lead-to-Cash Lifecycle",
-    intro:
-      "Not isolated software implementations—the full journey from first customer contact to revenue realization and insight.",
-    stages: [
-      { id: "lead-generation", label: "Lead Generation", description: "Identify and qualify demand." },
-      { id: "customer-engagement", label: "Customer Engagement", description: "Build relationships that convert." },
-      { id: "sales-management", label: "Sales Management", description: "Equip teams to sell with confidence." },
-      { id: "quotation", label: "Quotation", description: "Configure, price, and quote accurately." },
-      { id: "order-capture", label: "Order Capture", description: "Capture orders across every channel." },
-      { id: "order-orchestration", label: "Order Orchestration", description: "Route and manage orders intelligently." },
-      { id: "fulfillment", label: "Fulfillment", description: "Deliver with speed and accuracy." },
-      { id: "billing", label: "Billing", description: "Invoice and realize revenue reliably." },
-      { id: "subscription-billing", label: "Subscription Billing", description: "Automate recurring billing and renewals." },
-      { id: "finance-and-revenue", label: "Finance and Revenue Integration", description: "Integrate order and revenue data into your finance systems for real-time executive insight." },
-    ],
-    closingLine: "TechPlus supports the entire lifecycle—not isolated software implementations.",
   },
 
   businessOutcomes: {
@@ -315,20 +295,21 @@ export const homepageContent: HomepageContent = {
     eyebrow: "One Connected Flow",
     heading: "Lead-to-Cash, Without the Handoff Gaps",
     intro:
-      "Every stage of the journey, mapped to the SAP product that powers it—orchestrated as one continuous flow, not ten disconnected handoffs.",
+      "Not isolated software implementations—every stage of the journey, mapped to the SAP product that powers it, orchestrated as one continuous flow, not ten disconnected handoffs.",
     backgroundImage: "/images/lead-to-cash-flow.jpg",
     stages: [
-      { id: "lead-generation", label: "Lead Generation", product: "SAP Sales Cloud", accent: "sky" },
-      { id: "customer-engagement", label: "Customer Engagement", product: "SAP Sales Cloud", accent: "sky" },
-      { id: "sales-management", label: "Sales Management", product: "SAP Sales Cloud", accent: "sky" },
-      { id: "quotation", label: "Quotation", product: "SAP CPQ", accent: "sky" },
-      { id: "order-capture", label: "Order Capture", product: "DataXstream OMS+", accent: "amber" },
-      { id: "order-orchestration", label: "Order Orchestration", product: "DataXstream OMS+", accent: "amber" },
-      { id: "fulfillment", label: "Fulfillment", product: "DataXstream OMS+", accent: "amber" },
-      { id: "billing", label: "Billing", product: "SAP S/4HANA Cloud", accent: "amber" },
-      { id: "subscription-billing", label: "Subscription Billing", product: "SAP Subscription Billing", accent: "amber" },
-      { id: "finance-and-revenue", label: "Finance and Revenue Integration", product: "SAP S/4HANA Cloud + SAP Integration Suite", accent: "amber" },
+      { id: "lead-generation", label: "Lead Generation", description: "Identify and qualify demand.", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "customer-engagement", label: "Customer Engagement", description: "Build relationships that convert.", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "sales-management", label: "Sales Management", description: "Equip teams to sell with confidence.", product: "SAP Sales Cloud", accent: "sky" },
+      { id: "quotation", label: "Quotation", description: "Configure, price, and quote accurately.", product: "SAP CPQ", accent: "sky" },
+      { id: "order-capture", label: "Order Capture", description: "Capture orders across every channel.", product: "DataXstream OMS+", accent: "amber" },
+      { id: "order-orchestration", label: "Order Orchestration", description: "Route and manage orders intelligently.", product: "DataXstream OMS+", accent: "amber" },
+      { id: "fulfillment", label: "Fulfillment", description: "Deliver with speed and accuracy.", product: "DataXstream OMS+", accent: "amber" },
+      { id: "billing", label: "Billing", description: "Invoice and realize revenue reliably.", product: "SAP S/4HANA Cloud", accent: "amber" },
+      { id: "subscription-billing", label: "Subscription Billing", description: "Automate recurring billing and renewals.", product: "SAP Subscription Billing", accent: "amber" },
+      { id: "finance-and-revenue", label: "Finance and Revenue Integration", description: "Integrate order and revenue data into your finance systems for real-time executive insight.", product: "SAP S/4HANA Cloud + SAP Integration Suite", accent: "amber" },
     ],
+    closingLine: "TechPlus supports the entire lifecycle—not isolated software implementations.",
   },
 
   omsPlus: {
